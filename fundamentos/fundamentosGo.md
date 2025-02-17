@@ -1,4 +1,4 @@
-**Fundamentos de Go (Golang) **  
+** Fundamentos de Go (Golang) **  
 
 Este documento cubre los conceptos esenciales del lenguaje **Go**, desde su sintaxis básica hasta la concurrencia con goroutines y canales.  
 
@@ -17,7 +17,7 @@ Go es un lenguaje de programación moderno, rápido y eficiente, diseñado por G
 
 ---
 
-## ** 2. Variables y Tipos de Datos **  
+##  2. Variables y Tipos de Datos **  
 
 
 ### 🔹 Declaración Explícita**  
