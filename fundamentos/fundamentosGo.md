@@ -1,4 +1,4 @@
-** Fundamentos de Go (Golang) **  
+## Fundamentos de Go (Golang) **  
 
 Este documento cubre los conceptos esenciales del lenguaje **Go**, desde su sintaxis básica hasta la concurrencia con goroutines y canales.  
 
