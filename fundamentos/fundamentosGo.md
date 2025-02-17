@@ -22,44 +22,51 @@ Go es un lenguaje de programación moderno, rápido y eficiente, diseñado por G
 
 ### 🔹 Declaración Explícita**  
 
-
+''' go
 var mensaje string = "Hola, Go!"
 var edad int = 25
 
 temperatura := 30.5  // Go infiere que es float64
 activa := true        // Go infiere que es bool
-
+```
 🔹 Arrays y Slices
+```go
+
 var numeros [3]int = [3]int{1, 2, 3}
 
 Slice (dinámico, más usado en Go):
 numeros := []int{1, 2, 3}
 numeros = append(numeros, 4)  // Agregar elementos dinámicamente
-
+```
 🔹 Maps (Diccionarios en Go)
+```go
+
 usuarios := map[string]int{
 	"Juan":  30,
 	"Maria": 25,
 }
 
 fmt.Println(usuarios["Juan"])  // 30
-
+```
 ##  3. Funciones en Go 
+```go
 
 func sumar(a int, b int) int {
 	return a + b
 }
-
+```
 Funciones con múltiples retornos:
+```go
 
 func dividir(dividendo, divisor int) (int, int) {
 	return dividendo / divisor, dividendo % divisor
 }
 
-
+```
 ## 4.  Estructuras (struct) y Métodos
 
 Las estructuras (struct) permiten definir objetos personalizados.
+```go
 
 package main
 
@@ -79,12 +86,13 @@ func main() {
 	p := Persona{"Juan", 30}
 	p.Saludar()
 }
-
+```
 Puntos Clave:
 ✔ Go no tiene clases ni herencia, en su lugar usa structs.
 ✔ Podemos definir métodos asociados a una estructura.
 
 Si queremos modificar la estructura desde un método, usamos punteros (*Persona).
+```go
 
 
 package main
@@ -106,10 +114,11 @@ func main() {
 	c.Depositar(50)  // Se modifica el saldo real
 	fmt.Println("Saldo actual:", c.Saldo)  // Salida: 150
 }
-
+```
 ## 5. Interfaces en Go (Polimorfismo sin Herencia)
 En lenguajes como Java o Python, usamos herencia para compartir métodos entre clases.
 En Go, no hay herencia, pero sí interfaces para lograr polimorfismo.
+```go
 
 package main
 
@@ -152,6 +161,7 @@ func main() {
 
 ## 6. Concurrencia en Go  (Goroutines y Canales)
 🔹 Goroutines (Ejecución Concurrente)
+```go
 
 package main
 
@@ -171,8 +181,9 @@ func main() {
 	go imprimirMensaje("Hola desde goroutine") // Se ejecuta en paralelo
 	imprimirMensaje("Hola desde main")         // Se ejecuta en el hilo principal
 }
-
+```
 🔹 Canales en Go (Comunicación entre Goroutines)
+```go
 
 package main
 
@@ -187,9 +198,10 @@ func main() {
 
 	fmt.Println(<-canal) // Recibe el mensaje del canal
 }
-
+```
 ## 7. Manejo de Errores en Go ⚠️
 Go no usa excepciones, sino valores de error explícitos.
+```go
 
 package main
 
