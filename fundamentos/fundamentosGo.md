@@ -22,7 +22,7 @@ Go es un lenguaje de programación moderno, rápido y eficiente, diseñado por G
 
 ### 🔹 Declaración Explícita**  
 
-```go
+
 var mensaje string = "Hola, Go!"
 var edad int = 25
 
@@ -44,7 +44,7 @@ usuarios := map[string]int{
 
 fmt.Println(usuarios["Juan"])  // 30
 
-3. Funciones en Go 
+##  3. Funciones en Go 
 
 func sumar(a int, b int) int {
 	return a + b
@@ -150,7 +150,7 @@ func main() {
 }
 
 
-## 5. Concurrencia en Go  (Goroutines y Canales)
+## 6. Concurrencia en Go  (Goroutines y Canales)
 🔹 Goroutines (Ejecución Concurrente)
 
 package main
@@ -188,7 +188,7 @@ func main() {
 	fmt.Println(<-canal) // Recibe el mensaje del canal
 }
 
-## 6. Manejo de Errores en Go ⚠️
+## 7. Manejo de Errores en Go ⚠️
 Go no usa excepciones, sino valores de error explícitos.
 
 package main
