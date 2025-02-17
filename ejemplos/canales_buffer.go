@@ -5,14 +5,14 @@
 	- Luego, el consumidor recibe los mensajes.
 */
 
-package main
+package ejemplos
 
 import (
 	"fmt"
 	"time"
 )
 
-func main() {
+func ejemplos() {
 	// Canal con un búfer de 3 posiciones
 	canal := make(chan string, 3)
 

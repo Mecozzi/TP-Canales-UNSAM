@@ -4,7 +4,7 @@
 	- Un consumidor recibe los números y los procesa.
 */
 
-package main
+package ejemplos
 
 import (
 	"fmt"
